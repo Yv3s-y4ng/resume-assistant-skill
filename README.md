@@ -88,6 +88,17 @@ pip install fpdf2 python-docx openpyxl
 - 🌐 **HTML** - 现代响应式设计，支持深色模式
 - 📊 **Excel** - 能力提升追踪表，包含里程碑
 
+### ⚠️ 重要提示
+
+**如果生成的简历内容为空**，99%的原因是JSON数据格式错误。
+
+简历数据必须使用**扁平化JSON结构**，常见错误：
+- ❌ `personal_info.name` → ✅ `name`
+- ❌ `research_experience` → ✅ `experience`
+- ❌ `title: "项目名"` → ✅ `company: "项目名"`
+
+详细说明请查看：**[IMPORTANT_FORMAT.md](IMPORTANT_FORMAT.md)**
+
 ### 🚀 快速开始
 
 安装后，直接与 Claude Code 对话：
